@@ -46,7 +46,7 @@ $(".carousel-item1").turn({
 var flipPage = setInterval(()=>{
     if (i>=2){
         i = 0
-        $(".carousel-item1").turn("page", 1);
+        $(".carousel-item1").turn("previous").turn("previous");
     }
     else{
         i++
