@@ -31,3 +31,28 @@ document.addEventListener('scroll', ()=>{
     
 });
 }
+
+// CAROUSEL ANIMATION
+
+var i = 0
+
+
+$(".carousel-item1").turn({
+    width: '200%',
+    gradients: true,
+    acceleration:true
+  });
+
+setInterval(()=>{
+    if (i>=2){
+        i = 0
+        $(".carousel-item1").turn("page", 1);
+    }
+    else{
+        i++
+        $('.carousel-item1').turn('next')
+    }
+    
+
+    
+}, '2000')
