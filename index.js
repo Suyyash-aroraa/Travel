@@ -43,7 +43,7 @@ $(".carousel-item1").turn({
     acceleration:true
   });
 
-setInterval(()=>{
+var flipPage = setInterval(()=>{
     if (i>=2){
         i = 0
         $(".carousel-item1").turn("page", 1);
@@ -51,8 +51,5 @@ setInterval(()=>{
     else{
         i++
         $('.carousel-item1').turn('next')
-    }
+    }}, '2500')
     
-
-    
-}, '2000')
